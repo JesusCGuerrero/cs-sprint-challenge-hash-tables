@@ -36,7 +36,7 @@ class TestEx2(unittest.TestCase):
 
         queries = []
 
-        for i in range(1000000):
+        for i in range(100):
             queries.append(f"nofile{i}")
 
         queries += [

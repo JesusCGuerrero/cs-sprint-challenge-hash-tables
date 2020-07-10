@@ -1,15 +1,28 @@
-# Your code here
-
-
 
 def finder(files, queries):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    cache = {}
+    result = []
+    # for file in files:
+    #     if file not in cache:
+    #         cache[file] = False
+    # for each in cache:
+    #     for query in queries:
+    #         if query not in cache:
+    #             if query in each:
+    #                 cache[each] = True
+    # for item in cache:
+    #     if cache[item] == True:
+    #         result.append(cache[each])
+    # return result
 
+    for query in queries:
+        if query not in cache:
+            cache[query] = False
+    for item in cache:
+        for file in files:
+            if item in file:
+                result.append(file)
     return result
-
 
 if __name__ == "__main__":
     files = [
