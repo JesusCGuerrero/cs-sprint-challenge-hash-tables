@@ -23,11 +23,24 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+# hashing functions are where we run through a set of data like a list of names, we get the ascii value for each letter in the name and then add the ascii value together for all the letters in a name, divide it by the available slots and that gives us the index of where that name belongs in the list.
+
 2. Collision resolution
+# one way to solve collisions is to use a linked list to handle the storage side of things for the data.
+
 3. Performance of basic hash table operations
+# O(1)
+
 4. Load factor
+# load factor is the number of keys stored in the hash table divided by the capacity of the hash table, and it the load factor should be less than 1
+
 5. Automatic resizing
+# at a certain point based off the load factor we can resize the table to fit additional data?
+
 6. Various use cases for hash tables
+# search for items within a large set of data
+# we can also use it to find duplicate items
+# and since we have access to everything we can store/retrieve as well
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
